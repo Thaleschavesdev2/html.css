@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias Html</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>aumente e diminua o tamanho do navegador</p>
+    <picture>
+<source media="(max-width: 750px )" srcset="imagens/Foto-p.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="foto-g">
+<!-- sempre carregue a imagem grande dpois vai carregando as imagens menores acinma do codigo inicial -->
+
+
+    </picture>
+    <h1>reproduzir audio</h1>
+    <!-- jeito facil -->
+    <audio src="midias/Forest Lullabye - Asher Fulero.mp3"controls autoplay>
+        
+    </audio>
+<h1>outra maneira</h1>
+    <audio preload="metadata" autoplay controls loop>
+<source src="midias/Forest Lullabye - Asher Fulero.mp3" type="audio/mpeg">
+<source src="midias/Forest Lullabye - Asher Fulero.ogg" type="audio/ogg">
+<source src="midias/Forest Lullabye - Asher Fulero.wav" type="audio/wav">
+<p>Infelizmete seu navegagor nao e compativel <a href="midias/Forest Lullabye - Asher Fulero.mp3">clique para dowload</a></p>
+
+</audio>
+<a href="midias/Forest Lullabye - Asher Fulero.mp3" target="_blank" > dowload</a >
+
+</body>
+</html>
