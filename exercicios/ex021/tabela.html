@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+width: 500px;
+border-collapse: collapse;
+
+}
+td,th{
+border: 1px solid black;
+padding: 10px;
+}
+thead,tfoot{
+background-color: gray;
+color: white;
+
+}
+thead>tr>th{
+    position: sticky;
+    top:-1px ;
+    background-color: gray;
+}
+
+
+
+caption{
+font-size: 1.5em;
+font-weight: bold;
+padding: 10px;
+background-color: lightgray;
+}
+tbody > tr:nth-child(even) {
+background-color:lightgray;
+}
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabela</h1>
+<table>
+
+<caption>População Brasileira</caption>
+    <thead>
+<tr>
+<th>Estado</th>
+<th scope="row" style="width:50PX ;" >População</th>
+</tr>
+
+</thead>
+    <tbody>
+<tr>
+<td>São Paulo</td>
+<td>45 919 049</td>
+</tr>
+    
+<tr>
+<td>Minas Gerais</td>
+<td>21168791</td>
+</tr>
+<tr>
+<td>Rio de Janeiro</td>
+<td>17269943</td>
+
+</tr>
+
+
+</tbody>
+<tfoot>
+<tr>
+<th>Total de Habitantes</th>
+<strong><td>1110000</td</strong>>
+
+
+</tr>
+
+
+
+
+
+</tfoot>
+</table>
+</body>
+</html>
