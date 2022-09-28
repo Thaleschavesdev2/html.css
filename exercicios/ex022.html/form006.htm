@@ -8,5 +8,70 @@
 </head>
 <body>
     <h1>exemplo de Formulario</h1>
+    <form action="cadastro.phpd" method="get" autocomplete="on">
+<p>
+<label for="iest">Estado</label>
+<select name="Estado" id="iest">
+
+<option value="">---Escolha---</option>
+<optgroup label="Região Sudeste">
+<option value="mg">Minas Gerais </option>
+<option value="rj">Rio de Janeiro</option>
+<option value="sp">São Paulo</option>
+</optgroup>
+<optgroup label="regia nordeste">
+<option value="ma">maranhao</option>
+<option value="pe">pernabuvo</option>
+<option value="RN">Rio grande do Sul</option>
+</optgroup>
+
+</select>
+</p>
+
+<p>
+<label for="iprof">Profissão:</label>
+<input type="text" name="Prof" id="iprof" list="lstprof" placeholder="escolha">
+<datalist id="lstprof" >
+<option>Administrador</option>
+<option>contador</option>
+<option >uber</option>
+<option >youtuber</option>
+</datalist>
+
+</p>
+<p>
+    <label for="imsg">Mesagem</label><br>
+    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="sua mensagem aki"></textarea>
+</p>
+<p><input type="submit" value="enviar">
+<input type="reset" value="limpar"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
 </body>
 </html>
